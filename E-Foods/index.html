@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="style.css" rel="stylesheet">
+    <title>Foodworld</title>
+
+</head>
+
+<body>
+
+    <section class="its-section">
+
+        <header class="style-header">
+            <h3 class="style-h3">Foods</h3>
+            <h3 class="style-h3">Varieties</h3>
+            <h1 class="style-mayu">Mayu Foodcity</h1>
+            <h3 class="style-h3">Locations</h3>
+            <h3 class="style-h3">Shops</h3>
+            <div class="toggle"></div>
+            <!-- <i class="fa fa-bars" aria-hidden="true"></i> -->
+        </header>
+        <video src="cooking2.mp4" muted loop autoplay></video>
+        <div class="overlay"></div>
+        <div class="text">
+            <h2>Rediscover the pleasure of</h2>
+            <h3>Delicious at home</h3>
+            <p>The fondest memories are made when gathering around the table. No Yoga Exercise, No Meditation in a chapel filled with music will rid you of your blues better than the humble task of making your own bread.
+            </p>
+            <a href="#">Explore</a>
+        </div>
+
+        <ul class="socialmedia">
+            <li>
+                <a><img src="fb.png" alt="image of facebook" width="36" height="31"></a>
+            </li>
+            <li>
+                <a><img src="twitter.png" alt="image of twitter" width="36" height="31"></a>
+            </li>
+            <li>
+                <a><img src="instagram.png" alt="image of instagram" width="36" height="31"></a>
+            </li>
+        </ul>
+
+    </section>
+    <div class="homepage">
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Orders</a></li>
+            <li><a href="#">Menus</a></li>
+            <li><a href="#">Reservations</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </div>
+    <script>
+        const homepageToggle = document.querySelector('.toggle')
+        const itssection = document.querySelector('.its-section')
+
+        homepageToggle.addEventListener('click', () => {
+            homepageToggle.classList.toggle('active')
+            itssection.classList.toggle('active')
+        })
+    </script>
+
+
+
+</body>
+
+</html>

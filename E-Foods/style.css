@@ -1,0 +1,232 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;600;700&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Dancing Script', sans-serif;
+}
+
+.style-header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 40px 100px;
+    z-index: 4;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+}
+
+.style-h3:hover {
+    font-size: 1.6em;
+    color: rgb(98, 201, 39);
+}
+
+.style-mayu {
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-decoration: overline;
+    color: rgb(213, 34, 21);
+    font-style: italic;
+    font-weight: 50;
+    font-family: fantasy;
+    font-size: 2em;
+}
+
+
+/* .style-mayu:hover {
+    font-size: 1.2em;
+    color: rgb(98, 201, 39);
+} */
+
+
+/* .source {
+    width: auto;
+    height: auto;
+} */
+
+
+/* .socialmedia {
+    max-width: 2px;
+    height: auto;
+} */
+
+.its-section {
+    position: absolute;
+    right: 0;
+    width: 100%;
+    min-height: 100vh;
+    padding: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #111;
+    color: #fff;
+    z-index: 1;
+    transition: 0.8s;
+}
+
+.its-section.active {
+    right: 260px;
+    /* background-color: #FFF; */
+}
+
+.toggle {
+    position: relative;
+    width: 60px;
+    height: 60px;
+    background: url('menu.gif');
+    background-repeat: no-repeat;
+    background-size: 20px;
+    background-position: center;
+    cursor: pointer;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50px;
+    background-color: rgb(213, 34, 21);
+}
+
+.toggle.active {
+    background: url('delete.gif');
+    background-repeat: no-repeat;
+    background-size: 25px;
+    background-position: center;
+    border-radius: 80px;
+    background-color: rgb(19, 202, 123);
+}
+
+.its-section video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+    opacity: 0.8;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgb(61, 127, 130);
+    mix-blend-mode: overlay;
+}
+
+.text {
+    position: relative;
+    z-index: 3;
+    top: 0;
+    left: 0;
+}
+
+.text h2 {
+    font-size: 4em;
+    font-weight: 800;
+    /* text-transform: uppercase; */
+    line-height: 1em;
+}
+
+.text h3 {
+    font-size: 3em;
+    font-weight: 700;
+    /* text-transform: uppercase; */
+    line-height: 1em;
+}
+
+.text p {
+    font-size: 1.2em;
+    margin: 20px 0px;
+    font-weight: 400;
+    max-width: 600px;
+}
+
+.text a {
+    display: inline-block;
+    font-size: 1em;
+    font-weight: 400;
+    background: #fff;
+    color: rgb(0, 0, 0);
+    padding: 10px 20px;
+    margin-top: 10px;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 2px;
+    transition: 0.2s;
+    font-family: 'Times New Roman';
+}
+
+.text a:hover {
+    letter-spacing: 6px;
+}
+
+.socialmedia {
+    position: absolute;
+    bottom: 20px;
+    z-index: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.socialmedia li {
+    list-style: none;
+}
+
+.socialmedia li a {
+    display: inline-block;
+    margin-right: 20px;
+    filter: invert(1);
+    transform: scale(0.6);
+    transition: 0.4s;
+}
+
+.socialmedia li a:hover {
+    transform: scale(0.6) translateY(-15px);
+}
+
+.homepage {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 260px;
+    height: 100%;
+    /* color: #111; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.homepage ul {
+    position: relative;
+    list-style: none;
+}
+
+.homepage ul li a {
+    font-size: 1.2em;
+    font-weight: 700;
+    text-decoration: none;
+    color: #111;
+}
+
+.homepage ul li a:hover {
+    color: rgb(54, 135, 197);
+    font-size: 1.3em
+}
+
+@media(max-width:600px) {
+    .its-section,
+    .its-section header {
+        padding: 40px;
+    }
+    .text h2 {
+        font-size: 1em;
+    }
+    .text h3 {
+        font-size: 2em;
+    }
+}

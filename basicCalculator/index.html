@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="openTask" id="initialTask">
+        <div class="nextTask" id="nextInitialTask">
+            <table>
+                <tr>
+                    <!-- <td> <input type="button" value="c" class="rowZero" onClick="clrcsr()" /> </td> -->
+                    <td colspan="4"> <input type="text" id="textval" /> </td>
+                    <!-- <td> <input type="button" value="c" onClick="clr()" /> </td> -->
+
+                </tr>
+
+
+                <tr>
+                    <td> <input type="button" value="c" onClick="clr()" id="clrButton" /> </td>
+                    <td></td>
+                    <td></td>
+                    <td> <input type="button" value="x" onClick="deleteButton()" id="buttonDelete" /> </td>
+
+
+                </tr>
+
+                <tr>
+                    <td> <input type="button" value="1" class="rowOne" onClick="display('1')" /> </td>
+                    <td> <input type="button" value="2" class="rowOne" onClick="display('2')" /> </td>
+                    <td> <input type="button" value="3" class="rowOne" onClick="display('3')" /> </td>
+                    <td> <input type="button" value="/" class="rowOne" onClick="display('/')" /> </td>
+                </tr>
+                <tr>
+                    <td> <input type="button" value="4" class="rowTwo" onClick="display('4')" /> </td>
+                    <td> <input type="button" value="5" class="rowTwo" onClick="display('5')" /> </td>
+                    <td> <input type="button" value="6" class="rowTwo" onClick="display('6')" /> </td>
+                    <td> <input type="button" value="*" class="rowTwo" onClick="display('*')" /> </td>
+                </tr>
+                <tr>
+                    <td> <input type="button" value="7" class="rowThree" onClick="display('7')" /> </td>
+                    <td> <input type="button" value="8" class="rowThree" onClick="display('8')" /> </td>
+                    <td> <input type="button" value="9" class="rowThree" onClick="display('9')" /> </td>
+                    <td> <input type="button" value="-" class="rowThree" onClick="display('-')" /> </td>
+                </tr>
+                <tr>
+
+                    <td> <input type="button" value="." class="rowFour" onClick="display('.')" /> </td>
+                    <td> <input type="button" value="0" class="rowFour" onClick="display('0')" /> </td>
+                    <td> <input type="button" value="+" class="rowFour" onClick="display('+')" /> </td>
+                    <td> <input type="button" value="=" onClick="equals()" id="equalsButton" /></td>
+
+                </tr>
+
+            </table>
+        </div>
+    </div>
+
+</body>
+
+<script src="main.js">
+</script>
+
+</html>
